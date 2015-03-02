@@ -19,7 +19,7 @@ class libvirt::params {
     }
     'Debian': {
       $libvirt_package = 'libvirt-bin'
-      if $::operatingsystemmajrelease >= 8 {
+      if $::lsbmajdistrelease>= 8 {
         $libvirt_service = 'libvirtd'
       } else {
         $libvirt_service = 'libvirt-bin'
