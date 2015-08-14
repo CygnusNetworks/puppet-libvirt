@@ -60,6 +60,7 @@ class libvirt (
   $sasl2_qemu_mech_list      = undef,
   $sasl2_qemu_keytab         = undef,
   $sasl2_qemu_auxprop_plugin = undef,
+  $keepalive_interval        = undef,
 ) inherits ::libvirt::params {
 
   package { 'libvirt':
